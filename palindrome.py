@@ -17,3 +17,16 @@
 #     print("palindrome")
 # else:
 #     print("not palindrome")
+
+s=int(input("enter the number"))
+temp=s
+rev=0
+
+while s>0:
+    d=s%10
+    rev=rev*10+d
+    s=s//10
+if temp==rev:
+    print("palindrome")
+else:
+    print("not palindrome")
