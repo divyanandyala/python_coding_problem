@@ -15,11 +15,23 @@
 
 
 # convert Hours into Minutes and Seconds
-def convert_hours(hours):
-    minutes = hours * 60
-    seconds = hours * 60 * 60
+# def convert_hours(hours):
+#     minutes = hours * 60
+#     seconds = hours * 60 * 60
 
-    print("Minutes:", minutes)
-    print("Seconds:", seconds)
+#     print("Minutes:", minutes)
+#     print("Seconds:", seconds)
 
-convert_hours(24)
+# convert_hours(24)
+
+
+time = int(input("Enter hour: "))
+
+if time == 0:
+    print("12 AM")
+elif time < 12:
+    print(time, "AM")
+elif time == 12:
+    print("12 PM")
+else:
+    print(time - 12, "PM")
