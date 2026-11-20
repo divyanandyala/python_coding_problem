@@ -13,18 +13,14 @@
 
 
 def gcd(a, b):
-    if b == 0:
-        return a
+    while b != 0:
+        a, b = b, a % b
 
-    return gcd(b, a % b)
-
-
-def lcm(a, b):
-
-    return (a * b) // gcd(a, b)
-
+    return a
 
 a = 12
 b = 18
 
-print("LCM:", lcm(a, b))
+print("GCD:", gcd(a, b))
+
+
